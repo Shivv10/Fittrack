@@ -25,8 +25,8 @@ start index.html
 
 
 ## Members  
-- Maksym Lan 
-- Shiv Gandhi
+- Shiv Gandhi 
+- Maksym Lan
 - Ansh Patel  
 - Ian Spellman  
 - Carsten Kolynchuk
