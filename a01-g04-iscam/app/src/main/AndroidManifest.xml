@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+
+        <activity
+            android:name=".presentation.user.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".presentation.user.UserRegistrationActivity"
+            android:exported="false" />
+
+
+        <!-- HomeActivity -->
+        <activity
+            android:name=".presentation.menu.HomeActivity"
+            android:exported="false" />
+
+        <!-- EditProfileActivity-->
+        <activity
+            android:name=".presentation.user.EditProfileActivity"
+            android:exported="false" />
+
+        <!-- SearchFoodActivity -->
+        <activity
+            android:name=".presentation.food.SearchFoodActivity"
+            android:exported="false" />
+
+        <!-- SearchExerciseActivity -->
+        <activity
+            android:name=".presentation.exercise.SearchExerciseActivity"
+            android:exported="false" />
+
+        <!-- AddFoodActivity -->
+        <activity
+            android:name=".presentation.food.AddFoodActivity"
+            android:exported="false" />
+
+        <!-- AddExerciseActivity -->
+        <activity
+            android:name=".presentation.exercise.AddExerciseActivity"
+            android:exported="false" />
+
+    </application>
+</manifest>

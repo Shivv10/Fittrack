@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 34
+    testOptions {
+        animationsDisabled = true
+        unitTests {
+            all {
+                // Use JUnit (not JUnit Platform)
+                useJUnit()
+            }
+        }
+    }
+    defaultConfig {
+        applicationId "comp3350.srsys"
+        minSdkVersion 30
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    namespace 'comp3350.fittrack'
+
+    // Add this block to ensure test classes are compiled
+    sourceSets {
+        test {
+            java.srcDirs = ['src/test/java']
+        }
+        androidTest {
+            java.srcDirs = ['src/androidTest/java']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
+    implementation 'com.google.android.material:material:1.9.0'
+    //implementation('org.hsqldb:hsqldb:2.4.1')
+    implementation group: 'org.hsqldb', name: 'hsqldb', version: '2.4.1'
+
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation group: 'com.google.guava', name: 'guava', version: '25.1-jre'
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: '2.28.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    testImplementation project(':app')
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test:core:1.5.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test:rules:1.5.0'
+}

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comp3350.fittrack.presentation.menu.HomeActivity">
+
+    <!-- Main Content -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_logout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/logout_icon"
+                android:background="@android:color/transparent"
+                android:contentDescription="Logout"
+                android:scaleType="fitCenter"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+            <!-- Profile Icon (top-left inside constraint layout) -->
+
+            <!-- Calories Title -->
+
+            <ImageView
+                android:id="@+id/btn_open_drawer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:contentDescription="Profile"
+                android:focusable="true"
+                android:src="@drawable/profile_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/caloriesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Calories"
+                android:textColor="#E71E63"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Progress Bar -->
+            <comp3350.fittrack.presentation.menu.CircleProgressBar
+                android:id="@+id/arcProgressView"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="8dp"
+                app:arcStrokeWidth="100"
+                app:backgroundArcColor="#CCCCCC"
+                app:layout_constraintTop_toBottomOf="@id/caloriesText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:maxValue="100"
+                app:progressArcColor="#E71E63"
+                app:startAngle="135"
+                app:sweepAngle="270" />
+
+            <!-- Calories Eaten Text -->
+            <TextView
+                android:id="@+id/calories_eaten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="---"
+                android:textColor="#090909"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/arcProgressView"
+                app:layout_constraintEnd_toEndOf="@+id/arcProgressView"
+                app:layout_constraintStart_toStartOf="@+id/arcProgressView"
+                app:layout_constraintTop_toTopOf="@+id/arcProgressView" />
+
+            <!-- Calorie Goal Text -->
+            <TextView
+                android:id="@+id/calorieTargetText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="/2800"
+                android:textAlignment="center"
+                android:textColor="#CBCBCB"
+                android:textSize="24sp"
+                app:layout_constraintTop_toBottomOf="@+id/arcProgressView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="8dp"/>
+
+            <!-- ScrollView for buttons -->
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@id/calorieTargetText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Buttons inside ScrollView -->
+                    <Button
+                        android:id="@+id/btn_breakfast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:backgroundTint="#2196F3"
+                        android:onClick="btnSearchFoodOnClick"
+                        android:padding="16dp"
+                        android:text="Add Breakfast"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_lunch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:backgroundTint="#009688"
+                        android:onClick="btnSearchFoodOnClick"
+                        android:padding="16dp"
+                        android:text="Add Lunch"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_dinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:backgroundTint="#795548"
+                        android:onClick="btnSearchFoodOnClick"
+                        android:padding="16dp"
+                        android:text="Add Dinner"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_exercise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:backgroundTint="#E91E63"
+                        android:onClick="btnSearchExerciseOnClick"
+                        android:padding="16dp"
+                        android:text="Add Exercise"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_changeCalorieTarget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:backgroundTint="#FF9800"
+                        android:padding="16dp"
+                        android:text="Change Calorie Goal"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <!-- Side Drawer -->
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:layout_gravity="start">
+
+        <!-- Close Icon -->
+        <ImageView
+            android:id="@+id/btn_close_drawer"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end"
+            android:src="@drawable/close_icon"
+            android:contentDescription="Close Drawer" />
+
+        <!-- Drawer Buttons -->
+        <Button
+            android:id="@+id/btn_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/btn_delete_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Profile"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

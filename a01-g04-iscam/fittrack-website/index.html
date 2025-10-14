@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitTrack - Your Health, Simplified</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Lora:wght@400;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Circular Navigation Menu -->
+  <div class="menu-toggle">
+    <div class="menu-icon"></div>
+  </div>
+  <nav class="circular-menu">
+    <div class="nav-item" data-target="overview" data-label="Overview">
+      <img src="https://img.icons8.com/?size=24&id=99813&format=png&color=2A9D8F" alt="Overview Icon" />
+    </div>
+    <div class="nav-item" data-target="functionality" data-label="Features">
+      <img src="https://img.icons8.com/?size=24&id=S1hns4Mfld3u&format=png&color=2A9D8F" alt="Features Icon" />
+    </div>
+    <div class="nav-item" data-target="users" data-label="Users">
+      <img src="https://img.icons8.com/?size=24&id=aOANxyF4L9EF&format=png&color=2A9D8F" alt="Users Icon" />
+    </div>
+    <div class="nav-item" data-target="contributors" data-label="Team">
+      <img src="https://img.icons8.com/?size=24&id=92261&format=png&color=2A9D8F" alt="Team Icon" />
+    </div>
+    <div class="nav-item" data-target="postmortem" data-label="Postmortem">
+      <img src="https://img.icons8.com/?size=24&id=87268&format=png&color=2A9D8F" alt="Postmortem Icon" />
+    </div>
+  </nav>
+
+  <main>
+    <!-- Overview Section -->
+    <section id="overview" class="section animate-on-load">
+      <div class="overview-content">
+        <h1>FitTrack</h1>
+        <p>
+          FitTrack empowers you to achieve your fitness and nutrition goals with a simple, adaptable tool designed for
+          busy, health-conscious lives.
+        </p>
+      </div>
+      <div class="curved-bg"></div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision">
+      <h2 class="heading">FitTrack Vision Statement</h2>
+      <div class="para">
+        <p>
+          FitTrack empowers individuals to achieve their unique fitness and
+          nutrition goals through a simple, adaptable exercise and weight
+          management tool, helping to create healthier lifestyles for all. In
+          today’s busy world where time is a premium, FitTrack aims to quickly
+          and effectively serve health-conscious users and consolidate their
+          needs into one system.
+        </p>
+        <p>
+          FitTrack is designed for health-driven individuals who prioritize
+          managing their fitness and nutrition effectively but need a
+          convenient, all-in-one solution to fit into their busy lifestyles. The
+          target audience includes people with a range of fitness goals—whether
+          they are beginners looking to lose weight, fitness enthusiasts aiming
+          to maintain their progress, or athletes striving to optimize their
+          performance. These users value simplicity, personalization, and
+          flexibility in a system that adapts to their goals and preferences.
+          FitTrack appeals to those who seek a reliable, seamless tool to
+          streamline their health management without the need to juggle multiple
+          applications or complicated interfaces.
+        </p>
+        <p>
+          Users can set personalized fitness goals—whether it’s gaining,
+          maintaining, or losing weight—and receive actionable guidelines to
+          help achieve them. With the ability to modify their goals at any time
+          and set custom time frames, FitTrack seamlessly adjusts to the evolving
+          needs and lifestyles of its users.
+        </p>
+        <p>
+          The system generates personalized exercise plans based on the user’s
+          fitness goals, complemented by meal suggestions tailored to their
+          recommended daily calorie intake. These suggestions include preset
+          meals with detailed macronutrient information, offering users a quick
+          and easy way to plan their nutrition. Additionally, users can add their
+          own recipes to the system, enabling them to track and manage their
+          unique dietary preferences. This combination of customization and
+          guidance ensures that FitTrack supports a wide range of lifestyles.
+        </p>
+        <p>
+          The value of FitTrack lies in its ability to simplify and centralize
+          fitness and nutrition management into one comprehensive tool. By
+          combining exercise tracking, personalized meal plans, and flexible
+          goal-setting in a single platform, FitTrack eliminates the need for
+          multiple apps, saving users time and effort. Additionally, it will be
+          easy to use, making it accessible to individuals at all fitness levels,
+          encouraging consistent use and long-term success.
+        </p>
+        <p>
+          The success of FitTrack will be measured by several key indicators.
+          First, we aim to gather positive feedback from 90% of active users
+          within six months of using the system, where an active user is someone
+          who signs into the system on four unique days in any week. Additionally,
+          through simple surveys, we expect at least 50% of active users to report
+          achieving measurable progress towards their health and fitness goals,
+          where they will be asked questions regarding their physical performance,
+          weight changes, or overall well-being, demonstrating the system’s
+          effectiveness and user satisfaction.
+        </p>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="functionality" class="section animate-on-load">
+      <h2>Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Login and Functionality</h3>
+          <p>
+            Log in with your username and password, or easily create an account by entering your details and choosing a
+            secure password.
+          </p>
+          <div class="video-wrapper">
+            <video class="click-video" loop muted preload="none">
+              <source src="./assets/register_login.mp4" type="video/mp4" />
+            </video>
+            <div class="video-overlay">Click to Play</div>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <h3>Adding Food Items to Your Plan</h3>
+          <p>
+            Easily add and edit food items in your meal plan. Customize and update your food entries to accurately track
+            your nutrition throughout the day.
+          </p>
+          <div class="video-wrapper">
+            <video class="click-video" loop muted preload="none">
+              <source src="./assets/new_food.mp4" type="video/mp4" />
+            </video>
+            <div class="video-overlay">Click to Play</div>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <h3>Adding Exercises to Your Plan</h3>
+          <p>
+            Incorporate a variety of exercises into your plan. Add and modify workout routines to tailor your exercise
+            regimen to your personal fitness goals.
+          </p>
+          <div class="video-wrapper">
+            <video class="click-video" loop muted preload="none">
+              <source src="./assets/add_exercise.mp4" type="video/mp4" />
+            </video>
+            <div class="video-overlay">Click to Play</div>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <h3>Tracking Calories</h3>
+          <p>
+            Monitor your calorie intake with precision using real-time tracking and analytics, ensuring you stay on
+            target with your nutrition and fitness objectives.
+          </p>
+          <div class="video-wrapper">
+            <video class="click-video" loop muted preload="none">
+              <source src="./assets/add_meal.mp4" type="video/mp4" />
+            </video>
+            <div class="video-overlay">Click to Play</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Users Section -->
+    <section id="users" class="section animate-on-load">
+      <h2>Intended Users</h2>
+      <div class="para user-text-block">
+        FitTrack is designed for health-driven individuals who prioritize managing their fitness and nutrition
+        effectively while juggling busy lifestyles, and prefer a conivenient all in one calorie counter for their
+        everyday needs.
+      </div>
+    </section>
+
+
+    <!-- Team Section -->
+    <section id="contributors" class="section animate-on-load">
+      <h2>Our Team</h2>
+      <div class="team-grid">
+        <div class="contributor-card">
+          <img src="assets/images/max.jpg" alt="Max Lan" />
+          <h3>Maksym Lan</h3>
+          <p>Learned how to manage a team of developers, while also learing new tech, combining it with the refactoring
+            knowldge and a lot about databases</p>
+        </div>
+        <div class="contributor-card">
+          <img src="assets/images/ansh.png" alt="Ansh Patel" />
+          <h3>Ansh Patel</h3>
+          <p>Learned Andorid Studio and teamwork collaboration in gitlab</p>
+        </div>
+        <div class="contributor-card">
+          <img src="assets/images/shiv.png" alt="Shiv Gandhi" />
+          <h3>Shiv Gandhi</h3>
+          <p>Gained experience collaborating on Git, developing in Android Studio, writing clean, industry-standard
+            code, and effectively debugging complex issues.</p>
+        </div>
+        <div class="contributor-card">
+          <img src="assets/images/Carsten.jpeg" alt="Carsten Kolynchuk" />
+          <h3>Carsten Kolynchuk</h3>
+          <p>Learned how to comb documentation, review code, and working in a larger Git environment</p>
+        </div>
+        <div class="contributor-card">
+          <img src="assets/images/ian.jpg" alt="Ian Spellman" />
+          <h3>Ian Spellman</h3>
+          <p>Learned testing and how to work in a team</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Postmortem Section -->
+    <section id="postmortem" class="section animate-on-load">
+      <h2 class="postmortem-heading">Postmortem:</h2>
+
+      <!-- Development Process Experience -->
+      <div>
+        <h2 class="postmortem-sub-heading">Development Process Experience</h2>
+        <div class="postmortem-container">
+          <!-- Block: What Went Right -->
+          <div class="postmortem-block right">
+            <h3 class="list-heading">What Went Right</h3>
+            <ul>
+              <li>
+                The refactoring and debugging after Iteration 2 allowed us to deliver a functional product for Iteration
+                3.
+              </li>
+              <li>
+                Our merge conflict strategy, refined after the first iteration, worked well and prevented further
+                conflicts.
+              </li>
+              <li>
+                Reviewing commits after each developer completed a task, and manually checking those changes, helped
+                prevent new bugs and SOLID violations.
+              </li>
+              <li>
+                Assigning clear separation of concerns across the User, Food, and Exercise streams enabled smooth
+                development and efficient workflows.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Block: What Went Wrong -->
+          <div class="postmortem-block wrong">
+            <h3 class="list-heading">What Went Wrong</h3>
+            <ul>
+              <li>
+                In the early iterations, we didn't fully understand the project requirements or how to use the provided
+                tools.
+              </li>
+              <li>
+                During Iterations 1 and 2, we trusted that each developer's code was fine without reviews. This led to
+                bugs that emerged later.
+              </li>
+              <li>
+                There was a lack of clear documentation or guidance on using some tools. Much of what we learned came
+                from trial and error.
+              </li>
+              <li>
+                We didn’t request intermediate updates on progress, which allowed several features to go undeveloped
+                until late in the process.
+              </li>
+              <li>
+                Having multiple developers work on the same stream (User/Food/Exercise) created interdependencies that
+                slowed development.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Further Reflections -->
+      <div>
+        <div class="postmortem-container outside-block">
+
+          <!-- Block: Areas for Improvement -->
+          <div class="postmortem-block">
+            <h3 class="list-heading">Improvements from Iteration 2</h3>
+            <div class="list-container">
+              <ul>
+                <li>
+                  In Iteration 2, we decided to assign each developer a dedicated stream (User/Food/Exercise) instead of
+                  dividing by layers. This worked well, as everyone could focus on and understand their responsibilities
+                  more clearly, leading to smoother development.
+                </li>
+                <li>
+                  We originally planned to hold more team meetings and pair programming sessions. However, we didn’t end
+                  up doing any meetings—and surprisingly, this worked out. Everyone was able to stay focused and
+                  complete their tasks independently without disruptions.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Block: Changes from the Initial Vision -->
+          <div class="postmortem-block">
+            <h3 class="list-heading">Changes from Iteration 0</h3>
+            <div class="list-container">
+              <ul>
+                <li>
+                  The final product is significantly different from our original vision. Initially, we aimed to build a
+                  full-featured calorie planner with meal and exercise planning. Due to the complexity involved, we
+                  delivered a simpler calorie counter. However, this provides a solid base that can be extended into a
+                  full planner in the future.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Block: Team Learnings -->
+          <div class="postmortem-block">
+            <h3 class="list-heading">What We Learned About Teamwork</h3>
+            <div class="list-container">
+              <ul>
+                <li>
+                  Not everyone will complete their tasks on time, so it’s important to follow up and verify what’s done
+                  and how it’s done.
+                </li>
+                <li>
+                  We will no longer assume other people's code is good by default—we’ll always review it.
+                </li>
+                <li>
+                  Going forward, we will assign developers to specific functional streams rather than abstract layers.
+                  This approach clearly works better for us.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Block: Overall Conclusions -->
+          <div class="postmortem-block">
+            <h3 class="list-heading">General Conclusions</h3>
+            <div class="list-container">
+              <ul>
+                <li>
+                  Always review code, even if it’s written by someone you trust. A second pair of eyes helps catch bugs
+                  and ensures quality.
+                </li>
+                <li>
+                  Refactoring and debugging are powerful tools — even projects that seem off track can be recovered with
+                  the right focus and teamwork.
+                </li>
+                <li>
+                  Efficient communication and clearly defined roles help reduce confusion and boost productivity.
+                  Working in focused, independent streams proved more effective than overlapping responsibilities.
+                </li>
+                <li>
+                  It’s essential to manage technical debt early; ignoring it can compound issues and cost more time
+                  later in the project.
+                </li>
+                <li>
+                  Tools and environments should support your workflow — but it's the team's discipline and coordination
+                  that ultimately determine success.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.querySelector(".menu-toggle");
+      const menu = document.querySelector(".circular-menu");
+      const navItems = document.querySelectorAll(".nav-item");
+
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("open");
+      });
+
+      navItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          const targetId = item.getAttribute("data-target");
+          document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+          menu.classList.remove("open");
+        });
+      });
+    });
+
+    // Click-to-play toggle for all videos
+    document.querySelectorAll('.click-video').forEach((video) => {
+      const wrapper = video.closest('.video-wrapper');
+      const overlay = wrapper.querySelector('.video-overlay');
+      let hasBeenPlayed = false;
+
+      video.addEventListener('click', () => {
+        // Pause all other videos
+        document.querySelectorAll('.click-video').forEach((v) => {
+          if (v !== video) {
+            v.pause();
+            v.currentTime = 0;
+          }
+        });
+
+        // Play or pause this one
+        if (video.paused) {
+          video.play();
+          if (!hasBeenPlayed && overlay) {
+            overlay.style.opacity = '0';
+            hasBeenPlayed = true;
+          }
+        } else {
+          video.pause();
+        }
+      });
+    });
+  </script>
+
+  <script src="./scripts/videoplayer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<<<<<<< HEAD
+
+
+# Ignore build output directories
+/build/
+/app/build/
+
+# Ignore IDE-specific files and folders
+/local.properties
+
+# Ignore most of the .idea folder except useful configurations
+.idea/
+# Ignore Local properties
+local.properties
+
+
+# Ignore generated native build files
+=======
+>>>>>>> dev

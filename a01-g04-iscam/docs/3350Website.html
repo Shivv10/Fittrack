@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        /* Container for the three sections */
+        .main-container {
+            display: flex;
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        /* Each section is a flexbox item */
+        .section {
+            padding: 20px;
+            flex: 1;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        /* List Section */
+        .list-section {
+            background-color: #868080;
+        }
+
+        /* Video Section */
+        .video-section {
+            background-color: #a7a7a7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Writing Section */
+        .writing-section {
+            background-color: #868080;
+        }
+
+        /* Style for the list items */
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Main container holding all sections -->
+    <div class="main-container">
+        
+        <!-- List Section -->
+        <div class="section list-section">
+            <h2> Project Overview</h2>
+            <ul>
+                <li>FitTrack empowers individuals to achieve their unique fitness and nutrition goals through a simple, adaptable exercise and weight management tool, helping to create healthier lifestyles for all. In today’s busy world where time is a premium, FitTrack aims to quickly and effectively serve health-conscious users and consolidate their needs into one system.</li>
+                <li>  FitTrack is designed for health-driven individuals who prioritize managing their fitness and nutrition effectively but need a convenient, all-in-one solution to fit into their busy lifestyles. The target audience includes people with a range of fitness goals—whether they are beginners looking to lose weight, fitness enthusiasts aiming to maintain their progress, or athletes striving to optimize their performance. These users value simplicity, personalization, and flexibility in a system that adapts to their goals, and preferences. FitTrack appeals to those who seek a reliable, seamless tool to streamline their health management without the need to juggle multiple applications or complicated interfaces.</li>
+                <li>  Users can set personalized fitness goals—whether it’s gaining, maintaining, or losing weight—and receive actionable guidelines to help achieve them. With the ability to modify their goals at any time, and set custom time frames, FitTrack seamlessly adjusts to the evolving needs and lifestyles of its users.</li>
+                <li>   The system generates personalized exercise plans based on the user’s fitness goals, complemented by meal suggestions tailored to their recommended daily calorie intake. These suggestions include preset meals with detailed macronutrient information, offering users a quick and easy way to plan their nutrition. Additionally, users can add their own recipes to the system, enabling them to track and manage their unique dietary preferences. This combination of customization and guidance ensures that FitTrack supports a wide range of lifestyles.</li>
+                <li>   The value of FitTrack lies in its ability to simplify and centralize fitness and nutrition management into one comprehensive tool. By combining exercise tracking, personalized meal plans, and flexible goal-setting in a single platform, FitTrack eliminates the need for multiple apps, saving users time and effort. Additionally, it will be easy to use, making it accessible to individuals at all fitness levels, encouraging consistent use and long-term success.</li>
+                <li>   The success of FitTrack will be measured by several key indicators. First, we aim to gather positive feedback from 90% of active users within six months of using the system, where an active user is someone who signs into the system four unique days in any week. Additionally, through simple surveys, we expect at least 50% of active users to report achieving measurable progress towards their health and fitness goals, where they will be asked questions regarding their physical performance, weight changes, or better overall well-being, demonstrating the system’s effectiveness and user satisfaction.</li>
+                    </li>
+                <li>The intended users of FitTrack is anybody who desires to keep track of their calorie intake, how much they exercise, or both. The primary demographic would be health conscience 15-30 year olds who desire to take a more active role in their health.</li>
+                <li>FitTrack allows you to
+                    <li>-Log meals and exercises, so you never forget</li>
+                    <li>-add custom meals and exercises, for when you eat something new</li>
+                    <li>-Dynamically displayed calorie counter</li>
+                </li>
+                <li>GROUP MEMBERS AND SKILLS THEY LEARNED</li>
+                <li>Max  Lan - Experience with HSQLDB troubleshooting</li>
+                    <li> Ansh Patel - Hands on UI design experience </li>
+                        <li> Shiv Gahndi - Hands on refactoring experience </li>
+                            <li> Carsten Kolynchuk - Experience deep diving into documentation for troubleshooting</li>
+                                <li> Ian Spellman - Extensive practise writing tests</li>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section video-section">
+            <h2>[Demonstration Video Goes Here]</h2>
+        </div>
+
+        <div class="section writing-section">
+            <h2>Postmortem</h2>
+            <h3>What went right in the development process?</h3>
+            <h4>
+                Our biggest strength during development was our communication and group-minded attitude. Our questions were always answered swiftly by one another, and we never had anyone unaccounted for during scheduled meetings or deadlines
+                We also had great success during our refactoring, even if in a perfect world that wouldn’t happen in the first place.
+                </h4>
+                <h3>What went wrong in the development process?</h3>
+                <h4>Our biggest problem during development was the shortcuts we took and the mistakes we made that lead us into deep technical debt. 
+                This caused many problems, such as:
+                -lengthy refactoring process, spending time that could have been used to create new features
+                -causing features to not work, with the biggest example being our tests failing after our first refactor
+                -Lower grades, as much of our tech debt bordered on errors rather than shortcuts.
+                
+                </h4>
+        </div>
+        
+    </div>
+
+</body>
+</html>
