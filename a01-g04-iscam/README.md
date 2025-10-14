@@ -23,13 +23,6 @@ open index.html
 start index.html
 ```
 
-
-## Members  
-- Maksym Lan 
-- Shiv Gandhi
-- Ansh Patel  
-- Ian Spellman  
-- Carsten Kolynchuk
 ## Docs
 - [Presentation](fittrack-website/index.html)
 - [i0_Vision_Statement](docs/i0_A01_G04_Vision_Statement.md)  
@@ -62,4 +55,5 @@ To access the tests you may navigate to src/test for unit and integration tests,
 There are provided files for AllTests (Unit and Integration) and AllSystemTests (System UI Testing) that may be ran to run all the included testing. 
 
 **Note:** System Testing is intensive on the Android Emulator. To increase reliability of testing, animations are disabled during testing per Espresso's [documentation](https://developer.android.com/training/testing/espresso/setup#set-up-environment). If you are experiencing slowness running all System Tests in succession, it is recommended to run them individually to ensure reliability.
+
 
