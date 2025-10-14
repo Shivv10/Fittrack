@@ -31,11 +31,11 @@ start index.html
 - Ian Spellman  
 - Carsten Kolynchuk
 ## Docs
-- [Presentation](fittrack-website/index.html)
-- [i0_Vision_Statement](docs/i0_A01_G04_Vision_Statement.md)  
-- [i0_Retro](docs/i0_A01_G04_Retro.md)  
-- [Architecture Diagram](docs/ARCHITECTURE.md)  
-- [i3 Retrospective](docs/RETROSPECTIVE.md) 
+- [Presentation](a01-g04-iscam/fittrack-website/index.html)
+- [i0_Vision_Statement](a01-g04-iscam/docs/i0_A01_G04_Vision_Statement.md)  
+- [i0_Retro](a01-g04-iscam/docs/i0_A01_G04_Retro.md)  
+- [Architecture Diagram](a01-g04-iscam/docs/ARCHITECTURE.md)  
+- [i3 Retrospective](a01-g04-iscam/docs/RETROSPECTIVE.md) 
 
 ## Project Purpose
 FitTrack is an app designed for physically active people to track their calorie intake and exercise amount.
