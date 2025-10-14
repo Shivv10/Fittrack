@@ -23,13 +23,6 @@ open index.html
 start index.html
 ```
 
-
-## Members  
-- Shiv Gandhi 
-- Maksym Lan
-- Ansh Patel  
-- Ian Spellman  
-- Carsten Kolynchuk
 ## Docs
 - [Presentation](a01-g04-iscam/fittrack-website/index.html)
 - [i0_Vision_Statement](a01-g04-iscam/docs/i0_A01_G04_Vision_Statement.md)  
