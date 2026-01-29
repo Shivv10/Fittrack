@@ -1,4 +1,3 @@
-# A01 GROUP 4 iScam 
 
 ## Presentation
 #### 🌐 Running the Website Locally
