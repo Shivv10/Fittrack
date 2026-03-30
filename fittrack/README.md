@@ -1,34 +1,4 @@
-# A01 GROUP 4 iScam 
-
-## Presentation
-#### 🌐 Running the Website Locally
-
-To view the website locally:
-
-1. Navigate to the `fittrack-website` folder:
-
-```bash
-cd fittrack-website
-```
-
-2. Then open the `index.html` file:
-
-**macOS/Linux:**
-```bash
-open index.html
-```
-
-**Windows (Command Prompt):**
-```cmd
-start index.html
-```
-
-## Docs
-- [Presentation](fittrack-website/index.html)
-- [i0_Vision_Statement](docs/i0_A01_G04_Vision_Statement.md)  
-- [i0_Retro](docs/i0_A01_G04_Retro.md)  
-- [Architecture Diagram](docs/ARCHITECTURE.md)  
-- [i3 Retrospective](docs/RETROSPECTIVE.md) 
+# FITTRACK APP
 
 ## Project Purpose
 FitTrack is an app designed for physically active people to track their calorie intake and exercise amount.
